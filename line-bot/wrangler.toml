@@ -1,0 +1,13 @@
+name = "kintore-line-bot"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+# `npx wrangler d1 create kintore` の出力に出る database_id をここに貼る
+[[d1_databases]]
+binding = "DB"
+database_name = "kintore"
+database_id = "REPLACE_WITH_YOUR_DATABASE_ID"
+
+# 秘密情報は wrangler.toml に書かず、次のコマンドで登録する:
+#   npx wrangler secret put LINE_CHANNEL_SECRET
+#   npx wrangler secret put LINE_CHANNEL_ACCESS_TOKEN
